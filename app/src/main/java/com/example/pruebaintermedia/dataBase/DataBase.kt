@@ -10,7 +10,7 @@ private const val DATA_BASE_NAME = "productData_db"
 abstract class DataBase : RoomDatabase() {
 
     // Datos Dao Interfaz
-    abstract fun getProductData(): ProductDataDao
+    abstract fun getProductDataDao(): ProductDataDao
 
     companion object { // Metodo estatico que se puede llamar fuera de la clase
         @Volatile
