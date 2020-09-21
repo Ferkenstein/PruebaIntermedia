@@ -13,6 +13,10 @@ class ProductDataRepository(private val mProductDataDao: ProductDataDao) {
     suspend fun insertProductData(mProductData: ProductData) {
         mProductDataDao.insertOneTable(mProductData)
     }
+    // Eliminar datos de la tabla
+    suspend fun deleteAll() {
+        mProductDataDao.deleteAllData()
+    }
 
 
 }

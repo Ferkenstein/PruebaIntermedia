@@ -25,4 +25,7 @@ class ProductDataViewModel(application: Application) : AndroidViewModel(applicat
         repository.insertProductData(productData)
     }
 
+    fun deleteProductData() = viewModelScope.launch {
+        repository.deleteAll()
+    }
 }

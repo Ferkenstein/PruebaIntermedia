@@ -28,6 +28,9 @@ interface ProductDataDao {
     @Query("SELECT * FROM product_data WHERE id =:id")
     fun getOneDataByID(id: Int): ProductData
 
+    @Query("DELETE FROM product_data")
+    fun deleteAllData()
+
 
 
 }
