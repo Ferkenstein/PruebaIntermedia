@@ -30,14 +30,14 @@ class FirstFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_first, container, false)
-        // Probando funcionamiento de la base de datos
+
+        // Probar funcionamiento de la base de datos
         //val productData = ProductData(1,"Hola",true,12000,3)
         //viewModel.insertProductData(productData)
         //viewModel.allProductData.observe(viewLifecycleOwner, Observer {
         //    Log.d("Objeto", it.toString())
         //})
     }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
